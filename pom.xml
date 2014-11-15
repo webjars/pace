@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>pace</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <name>pace</name>
     <description>WebJar for pace</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/pace</url>
         <connection>scm:git:https://github.com/webjars/pace.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/pace.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>pace-1.0.2</tag>
     </scm>
     
     <build>
@@ -71,7 +71,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/pace-${upstream.version}" includes="pace.* themes/"/>
+                                    <fileset dir="${project.build.directory}/pace-${upstream.version}" includes="pace.* themes/" />
                                 </move>
                             </target>
                         </configuration>
